@@ -18,3 +18,15 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+board: ["seeeduino_xiao_ble"]
+shield: ["bykeeb_left", "bykeeb_right"]
+include:
+  # - board: bykeeb
+  # - board: nice_nano_v2
+  #   shield: reviung41
+  - board: seeeduino_xiao_ble
+    shield: bykeeb_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: bykeeb_left_with_studio
+    # artifact-name: bykeeb_left_with_studio
