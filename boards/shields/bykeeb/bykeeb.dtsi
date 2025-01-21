@@ -10,7 +10,7 @@
  / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical_layout = &default_layout;
+        zmk,physical-layout = &default_layout;
         zmk,matrix-transform = &default_transform;
         // for logging, if needed
         zephyr,console = &cdc_acm_uart;
@@ -89,7 +89,7 @@
 			, <&key_physical_attrs 100 100 800  300 0 0 0>
 			;
 	};
-
+};
 
  // for logging, if needed
 &usbd {
