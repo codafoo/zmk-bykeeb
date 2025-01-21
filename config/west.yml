@@ -2,8 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # - name: sadekbaroudi
-    #   url-base: https://github.com/sadekbaroudi
+    - name: sadekbaroudi
+      url-base: https://github.com/sadekbaroudi
+    - name: codafoo
+      url-base: https://github.com/codafoo
     # Note: This is only included because the feat/pointers-move-scroll isn't merged into
     #       ZMK main yet. Once it's merged, you no longer need this.
     # - name: petejohanson
@@ -20,5 +22,9 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-fingerpunch-keyboards
+      remote: codafoo
+      revision: bykeeb-studio
+      import: config/deps.yml
   self:
     path: config
