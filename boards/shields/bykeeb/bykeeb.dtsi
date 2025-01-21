@@ -43,9 +43,8 @@
             ;
 
     };
- };
 
-default_layout: default_layout {
+    default_layout: default_layout {
 		compatible = "zmk,physical-layout";
 		display-name = "Default";
 
